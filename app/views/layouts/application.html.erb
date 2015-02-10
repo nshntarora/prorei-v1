@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Grassup Forum</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css"></link>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="main_header clearfix">
+    <div class="wrapper">
+      <div id="logo">
+        <p>
+          <%= link_to "Prorei", root_path %>
+        </p>
+      </div>
+      <div id="buttons">
+        <% if user_signed_in? %>
+          <%= link_to "New Post", new_post_path %>
+          <%= link_to "Log Out", destroy_user_session_path, :method => :delete  %>
+        <% else %>
+          <%= link_to "Sign Up", new_user_registration_path %>
+          <%= link_to "Sign In", new_user_session_path %>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <p class="notice">
+      <%= notice %>
+    </p>
+    <p class="alert">
+      <%= alert %>
+    </p>
+  </div>
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+</body>
+</html>

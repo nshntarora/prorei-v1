@@ -16,7 +16,7 @@
 
  body {
  	font-family: 'Lato', sans-serif;
- 	background: #EDEFF0;
+ 	background: #fff;
  }
 
 .wrapper {
@@ -37,7 +37,7 @@
 .main_header {
 	width: 100%;
 	margin: 0 auto;
-	background: white;
+	background: #fff;
 	#logo {
 		float: left;
 		a {
@@ -46,14 +46,14 @@
 			letter-spacing: -1px;
 			font-size: 1.2rem;
 			text-decoration:none;
-			color:#397CAC;
+			color:#f46804;
 		}
 	}
 	#buttons {
 		float: right;
 		a {
 			line-height: 60px;
-			background: #397CAC;
+			background: #f46804;
 			padding: .5em 1em;
 			border-radius: 0.2em;
 			color: white;
@@ -66,7 +66,6 @@
 #posts {
 	background: white;
 	padding: 2em 5%;
-	border-radius: .5em;
 	.post {
 		margin: 1em 0;
 		padding: 1em 0;
@@ -74,7 +73,7 @@
 		.title {
 			margin: 0;
 			a {
-				color: #397CAC;
+				color: #f46804;
 				text-decoration: none;
 				font-weight: 100;
 				font-size: 1.25rem;
@@ -83,14 +82,14 @@
 		.date {
 			margin-top: .25rem;
 			font-size: 0.9rem;
-			color: #B2BAC2;
+			color: #000;
 		}
 	}
 }
 
 .button {
-	color: #397CAC;
-	border: 1px solid #397CAC;
+	color: #f46804;
+	border: 1px solid #f46804;
 	padding: .5em 1em;
 	border-radius: 0.2em;
 	text-decoration: none;
@@ -105,11 +104,11 @@
 	h1 {
 		font-weight: 100;
 		font-size: 2em;
-		color: #397CAC;
+		color: #f46804;
 		margin-top: 0;
 	}
 	p {
-		color: #B2BAC2;
+		color: #000;
 		font-size: 0.9rem;
 		font-weight: 100;
 		line-height: 1.5;
@@ -130,8 +129,8 @@
 				text-align: right;
 				padding-top: 1.5em;
 				a {
-					color: #397CAC;
-					border: 1px solid #397CAC;
+					color: #f46804;
+					border: 1px solid #f46804;
 					padding: .5em 1em;
 					border-radius: 0.2em;
 					text-decoration: none;
@@ -143,14 +142,14 @@
 				padding: 0;
 			}
 			.comment_author {
-				color: #397CAC;
+				color: #f46804;
 				margin-top: .5rem;
-				font-size: 0.6em;
+				font-size: 1em;
 				font-weight: 700;
 			}
 		}
 		input[type="submit"] {
-			background: #397CAC;
+			background: #f46804;
 			border: none;
 			color: white;
 			font-weight: 100;
@@ -165,4 +164,18 @@
 			margin: 1em 0;
 		}
 	}
+}
+.form-control{
+	height: 25px;
+	width: 30%;
+}
+.control-label{
+	padding: 1em;
+}
+.formwrapper{
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2em 5%;
 }
