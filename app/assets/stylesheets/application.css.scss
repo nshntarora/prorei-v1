@@ -15,7 +15,7 @@
  */
 
  body {
- 	font-family: 'Lato', sans-serif;
+ 	font-family: 'Raleway', sans-serif;
  	background: #fff;
  }
 
@@ -40,12 +40,9 @@
 	background: #fff;
 	#logo {
 		float: left;
-		a {
-			text-transform: uppercase;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-size: 1.2rem;
-			text-decoration:none;
+		img {
+			height: 35px;
+			width: auto;
 			color:#f46804;
 		}
 	}

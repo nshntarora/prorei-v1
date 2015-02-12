@@ -3,7 +3,7 @@
 <head>
   <title>Prorei</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css"></link>
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css"></link>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet"></link>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -13,7 +13,7 @@
     <div class="wrapper">
       <div id="logo">
         <p>
-          <%= link_to "Prorei", root_path %>
+          <%= link_to image_tag("prorei.png", :alt => "rss feed"), root_path %>
         </p>
       </div>
       <div id="buttons">
