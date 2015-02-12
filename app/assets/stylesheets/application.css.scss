@@ -183,3 +183,16 @@
 .help-block {
 	padding: 1em;
 }
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="password"],
+#form input[type="file"],
+#cancel_form input[type="text"],
+#cancel_form input[type="email"],
+#cancel_form input[type="password"],
+#cancel_form input[type="file"] {
+    height: 2.5rem;
+    padding: 0.5rem 3.5%;
+    margin-bottom: 1rem;
+}
