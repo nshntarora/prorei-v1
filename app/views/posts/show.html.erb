@@ -5,11 +5,13 @@
   <p>
     <%= @post.content %>
   </p>
+  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure" }, class: "button" %>
+  <%= link_to "Edit", edit_post_path(@post), class: "button" %>
+  
+  <br/>
   <br/>
   <hr/>
   <br/>
-  <%= link_to "Edit", edit_post_path(@post), class: "button" %>
-  <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure" }, class: "button" %>
   <div id="comments">
     <h2>
       <%= @post.comments.count %>

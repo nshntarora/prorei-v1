@@ -6,17 +6,17 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :first_name, :label => 'First Name', required: true, autofocus: true %>
+    <%= f.input :first_name, :placeholder => 'First Name', required: true, autofocus: true %>
     <br>
-    <%= f.input :last_name, :label => 'Last Name', required: true, autofocus: true %>
+    <%= f.input :last_name, :placeholder => 'Last Name', required: true, autofocus: true %>
     <br>
-    <%= f.input :user_name, :label => 'Username', required: true, autofocus: true %>
+    <%= f.input :user_name, :placeholder => 'Username', required: true, autofocus: true %>
     <br>
-    <%= f.input :email, :label => 'Email', required: true, autofocus: true %>
+    <%= f.input :email, :placeholder => 'Email', required: true, autofocus: true %>
     <br>
-    <%= f.input :password, :label => 'Password', required: true %>
+    <%= f.input :password, :placeholder => 'Password', required: true %>
     <br>
-    <%= f.input :password_confirmation, :label => 'Confirm Password', required: true %>
+    <%= f.input :password_confirmation, :placeholder => 'Confirm Password', required: true %>
     <br>
   </div>
 
@@ -25,7 +25,9 @@
   </div>
 <% end %>
 
+<div class="bottom-links">
+    <%= link_to "Already have an account? Sign In", new_user_session_path %>
+  </div>
 
-<%= render "devise/shared/links" %>
 </center>
 </div>

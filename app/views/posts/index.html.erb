@@ -5,9 +5,9 @@
         <%= link_to post.title, post %>
       </h2>
       <p class="date">
-        Published at
+        Published
         <%= time_ago_in_words(post.created_at) %>
-        by
+        ago by
         <%= post.user.user_name %>
       </p>
     </div>

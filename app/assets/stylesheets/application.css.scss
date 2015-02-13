@@ -15,7 +15,7 @@
  */
 
  body {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Ubuntu', sans-serif;
  	background: #fff;
  }
 
@@ -65,7 +65,7 @@
 	padding: 2em 5%;
 	.post {
 		margin: 1em 0;
-		padding: 1em 0;
+		padding: 1.2em 0;
 		border-bottom: 1px solid #D1d1d1;
 		.title {
 			margin: 0;
@@ -73,13 +73,14 @@
 				color: #f46804;
 				text-decoration: none;
 				font-weight: 100;
-				font-size: 1.25rem;
+				font-size: 1.5rem;
 			}
 		}
 		.date {
-			margin-top: .25rem;
-			font-size: 0.9rem;
-			color: #000;
+			color: #939393;
+			float: right;
+			font-size: 0.7rem;
+			margin: auto;
 		}
 	}
 }
@@ -87,26 +88,50 @@
 .button {
 	color: #f46804;
 	border: 1px solid #f46804;
-	padding: .5em 1em;
+	padding: 0.5em 1em;
 	border-radius: 0.2em;
 	text-decoration: none;
 	margin-right: 2%;
-	font-size: 12px;
+	font-size: 0.8em;
+	float: right;
+	
+}
+.btn-default {
+	background: none repeat scroll 0% 0% #F46804;
+	padding: 0.5em 1em;
+	border-radius: 0.2em;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.bottom-links {
+	padding: 1em;
+	a {
+		color: #939393;
+		text-decoration: none;
+	}
+}
+
+hr{
+	color: #93939;
 }
 
 #post_content {
 	background: white;
 	padding: 2em 5%;
 	border-radius: .5em;
+	height: 180px;
+	width: -moz-available;
 	h1 {
 		font-weight: 100;
-		font-size: 2em;
+		font-size: 2.5em;
 		color: #f46804;
 		margin-top: 0;
 	}
 	p {
 		color: #000;
-		font-size: 0.9rem;
+		font-size: 1rem;
 		font-weight: 100;
 		line-height: 1.5;
 	}
@@ -121,7 +146,7 @@
 			}
 			.buttons {
 				width: 25%;
-				float: left;
+				float: right;
 				font-size: .8em;
 				text-align: right;
 				padding-top: 1.5em;
@@ -132,6 +157,7 @@
 					border-radius: 0.2em;
 					text-decoration: none;
 					margin-right: 2%;
+					font-size: 0.8em;
 				}
 			}
 			.comment_content {
@@ -164,10 +190,11 @@
 }
 .form-control{
 	height: 25px;
-	width: 30%;
+	width: -moz-available;
 }
 .control-label{
 	padding: 1em;
+	display: none;
 }
 .formwrapper{
 	width: 60%;
@@ -177,9 +204,6 @@
 	padding: 2em 5%;
 }
 
-.help-block {
-	padding: 1em;
-}
 
 #form input[type="text"],
 #form input[type="email"],
@@ -192,4 +216,52 @@
     height: 2.5rem;
     padding: 0.5rem 3.5%;
     margin-bottom: 1rem;
+}
+
+
+.help-block {
+    font-family:Tahoma,Geneva,Arial,sans-serif;
+    font-size:11px;
+    color: #FE0000;
+    padding: 1em;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+    padding: 0.2em;
+	border-radius: 10px;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+    padding: 0.2em;
+	border-radius: 10px;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+    padding: 0.2em;
+	border-radius: 10px;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+    padding: 0.2em;
+	border-radius: 10px;
+ }
+ 
+.close{
+	display: none;
 }
