@@ -41,7 +41,7 @@
           <%= link_to image_tag("prorei.png", :alt => "rss feed"), root_path %>
         </p>
       </div>
-      <div id="buttons">
+      <div class="buttons">
         <% if user_signed_in? %>
           <%= link_to "New Post", new_post_path %>
           <%= link_to "Log Out", destroy_user_session_path, :method => :delete  %>
