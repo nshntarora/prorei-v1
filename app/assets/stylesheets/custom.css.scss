@@ -1677,14 +1677,14 @@ input,button,select,textarea
 
 a
 {
-  color: #2780e3;
+  color: #ff6600;
   text-decoration: none;
 }
 
 a:hover,a:focus
 {
-  color: #165ba8;
-  text-decoration: underline;
+  color: #ff6600;
+  text-decoration: none;
 }
 
 a:focus
@@ -2091,6 +2091,7 @@ dd
 
 abbr[title],abbr[data-original-title]
 {
+  display: none;
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
@@ -3544,6 +3545,7 @@ label
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
+  display: none;
 }
 
 input[type="search"]
@@ -3595,7 +3597,7 @@ output
 .form-control
 {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 43px;
   padding: 10px 18px;
   font-size: 15px;
@@ -4087,6 +4089,7 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
     text-align: right;
     margin-bottom: 0;
     padding-top: 11px;
+    display: none;
   };
 }
 
@@ -4175,8 +4178,8 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
 .btn-default:hover,.btn-default:focus,.btn-default.focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
 {
   color: #ffffff;
-  background-color: #090909;
-  border-color: #040404;
+  background-color: #ff6600;
+  border-color: #ff6600;
 }
 
 .btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
@@ -5307,7 +5310,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
   min-height: 50px;
   margin-bottom: 21px;
   border: 1px solid transparent;
-  max-height: 52px;
+  max-height: 51px;
 }
 
 @media (min-width:768px)

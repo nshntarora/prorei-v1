@@ -1,21 +1,20 @@
-<div class="formwrapper">
 <center>
-<h1>Log in</h1>
-
+<h1 style="padding: 2em;">Log in</h1>
+<form role="form">
+  <div class="form-horizontal">
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email, :placeholder => 'Email', required: false, autofocus: true %>
-    <br>
     <%= f.input :password, :placeholder => 'Password', required: false %>
-    <br>
     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-    <br>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, "Log in" %>
   </div>
 <% end %>
+</div>
+</form>
 <br>
 <div class="bottom-links">
   <%= render "devise/shared/links" %>
