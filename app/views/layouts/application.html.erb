@@ -5,19 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Slabo+27px::latin,latin-ext' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-  <script type="text/javascript">
-  WebFontConfig = {
     google: { families: [ 'Ubuntu:400,400italic,700,700italic:latin' ] }
   };
   (function() {
@@ -34,29 +21,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header class="main_header clearfix">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
     <div class="wrapper">
-      <div id="logo">
-        <p>
-          <%= link_to image_tag("prorei.png", :alt => "rss feed"), root_path %>
-        </p>
-      </div>
-      <div class="buttons">
+          <%= link_to image_tag("prorei.png", :class => "navbar-brand"), root_path %>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
         <% if user_signed_in? %>
-          <%= link_to "New Post", new_post_path %>
-          <%= link_to "Log Out", destroy_user_session_path, :method => :delete  %>
+          <li><%= link_to "New Post", new_post_path %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete  %></li>
         <% else %>
-          <%= link_to "Sign Up", new_user_registration_path %>
-          <%= link_to "Sign In", new_user_session_path %>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
         <% end %>
+        </ul>
+        </div>
       </div>
     </div>
-  </header>
-  <div class="wrapper">
+  </nav>
+  <div class="content-wrapper">
     <%= render 'layouts/messages' %>
   </div>
-  <div class="wrapper">
+  <div class="content-wrapper">
     <%= yield %>
   </div>
+  <%= render 'layouts/footer' %>
 </body>
 </html>
