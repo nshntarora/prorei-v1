@@ -7,26 +7,7 @@
   </p>
   <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure" }, class: "button" %>
   <%= link_to "Edit", edit_post_path(@post), class: "button" %>
-  
-  <br/>
-  <br/>
-  <hr/>
-  <br/>
   <div id="comments">
-    <h2>
-      <%= @post.comments.count %>
-      <% if @post.comments.count==1 %>
-        Comment
-      <% else %>
-        Comments
-      <% end %>
-    </h2>
-    <%= render @post.comments %>
-    <h3>Reply To Thread</h3>
-    <% if user_signed_in? %>
-      <%= render 'comments/form' %>
-    <% else %>
-      <h4>You need to be signed in to comment</h4>
-    <% end %>
+      <h4>comments are removed</h4>
   </div>
 </div>
