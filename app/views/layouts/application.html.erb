@@ -38,12 +38,12 @@
     <div class="wrapper">
       <div id="logo">
         <p>
-          <%= link_to image_tag("prorei.png", :alt => "rss feed"), root_path %>
+          <%= link_to image_tag("prorei.png", :alt => "Prorei Logo"), root_path %>
         </p>
       </div>
       <div class="buttons">
         <% if user_signed_in? %>
-          <%= link_to "New Post", new_post_path %>
+          <%= link_to "Profile", current_user %>
           <%= link_to "Log Out", destroy_user_session_path, :method => :delete  %>
         <% else %>
           <%= link_to "Sign Up", new_user_registration_path %>
@@ -53,9 +53,8 @@
     </div>
   </header>
   <div class="wrapper">
-    <%= render 'layouts/messages' %>
-  </div>
-  <div class="wrapper">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </div>
 </body>
