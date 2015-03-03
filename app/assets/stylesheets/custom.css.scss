@@ -17,6 +17,8 @@ html
 body
 {
   margin: 0;
+  background: #ccc;
+  
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary
@@ -54,6 +56,7 @@ a:active,a:hover
 abbr[title]
 {
   border-bottom: 1px dotted;
+  display: none;
 }
 
 b,strong
@@ -1661,11 +1664,11 @@ html
 
 body
 {
-  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+  font-family: "GothamBook",Calibri,Candara,Arial,sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #ccc;
 }
 
 input,button,select,textarea
@@ -1768,7 +1771,7 @@ hr
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
 {
-  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+  font-family: "GothamBook",Calibri,Candara,Arial,sans-serif;
   font-weight: 300;
   line-height: 1.1;
   color: inherit;
@@ -5307,7 +5310,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
   min-height: 50px;
   margin-bottom: 21px;
   border: 1px solid transparent;
-  max-height: 52px;
+  max-height: 51px;
 }
 
 @media (min-width:768px)
@@ -7717,7 +7720,7 @@ button.close
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+  font-family: "GothamBook",Calibri,Candara,Arial,sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.42857143;
