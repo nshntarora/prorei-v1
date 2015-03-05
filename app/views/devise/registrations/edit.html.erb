@@ -1,4 +1,5 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<center>
+<h2 style="padding: 1em;">Edit <%= resource_name.to_s.humanize %></h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification :error_html => { :class => "error"} %>
@@ -6,8 +7,9 @@
   <div class="form-inputs">
     <%= f.input :first_name, required: true, autofocus: true %>
     <%= f.input :last_name, required: true, autofocus: true %>
-    <%= f.input :user_name, required: true, autofocus: true %>
+    <%= f.input :user_name, label: 'Username', required: true, autofocus: true %>
     <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :mobile, label: 'Mobile No.', required: true, autofocus: true %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
@@ -28,3 +30,6 @@
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+<br>
+<br>
+</center>

@@ -1680,14 +1680,14 @@ input,button,select,textarea
 
 a
 {
-  color: #2780e3;
+  color: #ff6600;
   text-decoration: none;
 }
 
 a:hover,a:focus
 {
-  color: #165ba8;
-  text-decoration: underline;
+  color: #ff6600;
+  text-decoration: none;
 }
 
 a:focus
@@ -3598,7 +3598,7 @@ output
 .form-control
 {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 43px;
   padding: 10px 18px;
   font-size: 15px;
@@ -4178,8 +4178,8 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
 .btn-default:hover,.btn-default:focus,.btn-default.focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
 {
   color: #ffffff;
-  background-color: #090909;
-  border-color: #040404;
+  background-color: #ff6600;
+  border-color: #ff6600;
 }
 
 .btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
@@ -6464,6 +6464,12 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active
   border-color: #4e9f15;
   color: #ffffff;
 }
+.alert-notice
+{
+  background-color: #3fb618;
+  border-color: #4e9f15;
+  color: #ffffff;
+}
 
 .alert-success hr
 {
@@ -6513,6 +6519,20 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active
 {
   background-color: #ff0039;
   border-color: #f0005e;
+  color: #ffffff;
+}
+
+.alert-error
+{
+  background-color: #FF0000;
+  border-color: #FF0000;
+  color: #ffffff;
+}
+
+.alert-alert
+{
+  background-color: #FF0000;
+  border-color: #FF0000;
   color: #ffffff;
 }
 
