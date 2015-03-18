@@ -2006,7 +2006,7 @@ a.bg-warning:hover
 
 .bg-danger
 {
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 a.bg-danger:hover
@@ -3464,7 +3464,7 @@ table td[class*="col-"],table th[class*="col-"]
 
 .table>thead>tr>td.danger,.table>tbody>tr>td.danger,.table>tfoot>tr>td.danger,.table>thead>tr>th.danger,.table>tbody>tr>th.danger,.table>tfoot>tr>th.danger,.table>thead>tr.danger>td,.table>tbody>tr.danger>td,.table>tfoot>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr.danger>th,.table>tfoot>tr.danger>th
 {
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 .table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr:hover>.danger,.table-hover>tbody>tr.danger:hover>th
@@ -3971,7 +3971,7 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
 {
   color: #ffffff;
   border-color: #ffffff;
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 .has-error .form-control-feedback
@@ -4326,8 +4326,8 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
 .btn-danger
 {
   color: #ffffff;
-  background-color: #ff0039;
-  border-color: #ff0039;
+  background-color: #ff0000;
+  border-color: #ff0000;
 }
 
 .btn-danger:hover,.btn-danger:focus,.btn-danger.focus,.btn-danger:active,.btn-danger.active,.open>.dropdown-toggle.btn-danger
@@ -4344,13 +4344,13 @@ textarea.form-group-lg .form-control,select[multiple].form-group-lg .form-contro
 
 .btn-danger.disabled,.btn-danger[disabled],fieldset[disabled] .btn-danger,.btn-danger.disabled:hover,.btn-danger[disabled]:hover,fieldset[disabled] .btn-danger:hover,.btn-danger.disabled:focus,.btn-danger[disabled]:focus,fieldset[disabled] .btn-danger:focus,.btn-danger.disabled.focus,.btn-danger[disabled].focus,fieldset[disabled] .btn-danger.focus,.btn-danger.disabled:active,.btn-danger[disabled]:active,fieldset[disabled] .btn-danger:active,.btn-danger.disabled.active,.btn-danger[disabled].active,fieldset[disabled] .btn-danger.active
 {
-  background-color: #ff0039;
-  border-color: #ff0039;
+  background-color: #ff0000;
+  border-color: #ff0000;
 }
 
 .btn-danger .badge
 {
-  color: #ff0039;
+  color: #ff0000;
   background-color: #ffffff;
 }
 
@@ -6262,7 +6262,7 @@ a.label:hover,a.label:focus
 
 .label-danger
 {
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 .label-danger[href]:hover,.label-danger[href]:focus
@@ -6517,8 +6517,8 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active
 
 .alert-danger
 {
-  background-color: #ff0039;
-  border-color: #f0005e;
+  background-color: #ff0000;
+  border-color: #f00000;
   color: #ffffff;
 }
 
@@ -6667,7 +6667,7 @@ a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active
 
 .progress-bar-danger
 {
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 .progress-striped .progress-bar-danger
@@ -6912,7 +6912,7 @@ a.list-group-item-warning.active,a.list-group-item-warning.active:hover,a.list-g
 .list-group-item-danger
 {
   color: #ffffff;
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 a.list-group-item-danger
@@ -7315,24 +7315,24 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 .panel-danger>.panel-heading
 {
   color: #ffffff;
-  background-color: #ff0039;
-  border-color: #f0005e;
+  background-color: #ff0000;
+  border-color: #f00000;
 }
 
 .panel-danger>.panel-heading+.panel-collapse>.panel-body
 {
-  border-top-color: #f0005e;
+  border-top-color: #f00000;
 }
 
 .panel-danger>.panel-heading .badge
 {
-  color: #ff0039;
+  color: #ff0000;
   background-color: #ffffff;
 }
 
 .panel-danger>.panel-footer+.panel-collapse>.panel-body
 {
-  border-bottom-color: #f0005e;
+  border-bottom-color: #f00000;
 }
 
 .embed-responsive
@@ -8559,7 +8559,7 @@ body
 
 .text-danger,.text-danger:hover
 {
-  color: #ff0039;
+  color: #ff0000;
 }
 
 .text-warning,.text-warning:hover
@@ -8604,12 +8604,12 @@ table .success a,.table .success a,table .warning a,.table .warning a,table .dan
 
 .has-error .help-block,.has-error .control-label,.has-error .form-control-feedback
 {
-  color: #ff0039;
+  color: #ff0000;
 }
 
 .has-error .form-control,.has-error .form-control:focus,.has-error .input-group-addon
 {
-  border: 1px solid #ff0039;
+  border: 1px solid #ff0000;
 }
 
 .has-success .help-block,.has-success .control-label,.has-success .form-control-feedback
@@ -8706,7 +8706,7 @@ a.list-group-item-warning.active:hover,a.list-group-item-warning.active:focus
 
 a.list-group-item-danger.active
 {
-  background-color: #ff0039;
+  background-color: #ff0000;
 }
 
 a.list-group-item-danger.active:hover,a.list-group-item-danger.active:focus
