@@ -3,11 +3,9 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-         
-  validates :user_name, uniqueness: true
-  validates :mobile,
-                  length: {minimum: 10, maximum: 10},
-                  :numericality => {:only_integer => true}
-  has_many :posts
-  has_many :comments
+
+  validates :user_name,
+            uniqueness: true,
+            format: {with: /\A[a-zA-Z0-9]+\Z/ }
+  validates :mobile, numericality: true
 end

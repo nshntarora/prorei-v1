@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 gem 'rails', '4.1.6'
 gem 'sqlite3'
 gem 'bootstrap-sass'
@@ -13,3 +13,4 @@ gem 'spring',        group: :development
 gem 'haml', '~> 4.0.6'
 gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.4.1'
+gem 'tzinfo-data'
