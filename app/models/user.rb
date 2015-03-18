@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
   			presence: true,
   			length: {is: 10},
   			numericality: {only_integer: true}
+  validates :about,
+        length: {maximum: 250}
 end
