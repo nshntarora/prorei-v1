@@ -7,5 +7,8 @@ class User < ActiveRecord::Base
   validates :user_name,
             uniqueness: true,
             format: {with: /\A[a-zA-Z0-9]+\Z/ }
-  validates :mobile, numericality: true
+  validates :phone,
+  			presence: true,
+  			length: {is: 10},
+  			numericality: {only_integer: true}
 end
