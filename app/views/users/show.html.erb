@@ -1,4 +1,4 @@
-<%= image_tag(current_user.avatar.url(:thumb)) %>
+<%= image_tag(current_user.avatar.url, class: "avatar")%>
 <br>
 <%= @user.user_name %>, <%= @user.email %>
 <br>

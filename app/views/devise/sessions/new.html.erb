@@ -6,7 +6,7 @@
   <div class="form-inputs">
     <%= f.input :email, :placeholder => 'Email', required: false, autofocus: true %>
     <%= f.input :password, :placeholder => 'Password', required: false %>
-    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    <%= f.input :remember_me, label: "Should I remember you?", as: :boolean if devise_mapping.rememberable? %>
   </div>
 
   <div class="form-actions">
