@@ -3,7 +3,8 @@
 <center>
 <h2 style="padding: 1em;">Edit <%= resource_name.to_s.humanize %></h2>
   <div class="form-inputs">
-    <%= f.file_field :avatar, required: true, autofocus: true %>
+    <%= image_tag(current_user.avatar.url, class: "avatar", style: "margin-bottom: 25px;") %>
+    <%= f.input :avatar, required: true, autofocus: true %>
     <%= f.input :first_name, required: true, autofocus: true %>
     <%= f.input :last_name, required: true, autofocus: true %>
     <%= f.input :user_name, label: 'Username', required: true, autofocus: true %>
