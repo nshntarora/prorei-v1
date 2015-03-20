@@ -2,7 +2,7 @@
 <center>
 <h1 style="padding: 1em;">Log in</h1>
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= minimal_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
     <%= f.input :email, :placeholder => 'Email', required: false, autofocus: true %>
     <%= f.input :password, :placeholder => 'Password', required: false %>
