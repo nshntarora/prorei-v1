@@ -1,7 +1,7 @@
+<div class="profile-top">
 <%= image_tag(current_user.avatar.url, class: "avatar")%>
-<br>
-<%= @user.user_name %>, <%= @user.email %>
-<br>
-<%= @user.phone %>
-<br>
-<%= @user.about %>
+	<p class="name">
+		<font size="25px"><b><%= @user.first_name%></b> <%= @user.last_name %></font><br>
+		<span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %>
+	</p>
+</div>

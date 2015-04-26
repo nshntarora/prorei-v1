@@ -59,9 +59,16 @@
 {
 	
 }
-.avatar
+.profile-top .avatar
 {
 	height: 250px;
 	width: 250px;
 	margin: 1em 1em 1em 0em;
+	border: 1px solid #c0c0c0;
+}
+
+.profile-top .name {
+	display: inline;
+	margin-top: 50px;
+	position: absolute;
 }
