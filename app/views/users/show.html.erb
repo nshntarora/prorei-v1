@@ -1,7 +1,7 @@
 <div class="profile-top">
 <%= image_tag(current_user.avatar.url, class: "avatar")%>
-	<p class="name">
-		<font size="25px"><b><%= @user.first_name%></b> <%= @user.last_name %></font><br>
-		<span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %>
+		<p class="name"><font size="25px"><b><%= @user.first_name%></b> <%= @user.last_name %></font></span><br>
+		<span class="threewords"><%= @user.word1 %>.<%= @user.word2 %>.<%= @user.word3 %></span><br><br>
+		<span class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></span>
 	</p>
 </div>

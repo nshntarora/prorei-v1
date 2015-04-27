@@ -59,6 +59,12 @@
 {
 	
 }
+.form-inputs .avatar
+{
+	height: 100px;
+	width: 100px;
+	border: 1px solid #c0c0c0;
+}
 .profile-top .avatar
 {
 	height: 250px;
@@ -71,4 +77,8 @@
 	display: inline;
 	margin-top: 50px;
 	position: absolute;
+}
+.profile-top .threewords {
+	display: inline;
+	font-size: 1.2em;
 }
