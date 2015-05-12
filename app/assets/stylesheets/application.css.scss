@@ -25,30 +25,23 @@
 }
 
 .wrapper {
-	width: 60%;
-	max-width: 1140px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 .content-wrapper {
-	width: 60%;
-	max-width: 1140px;
+	max-width: 1000px;
 	margin: 0 auto;
-	border: 1px #c0c0c0 solid;
+	border: 1px #121212 solid;
 	background: #fff;
 }
 #home
 {
-	background-image: url("baldguy.jpg");
+	background-image: url("digital-teaching.jpg");
 	margin-top: -21px;
-	margin-bottom: -10px;
+	margin-bottom: -11px;
 	color: #fff
 }
 
-#footer
-{
-	padding: 1em;
-	color: #777;
-}
 
 .bottom-links
 {
@@ -65,20 +58,40 @@
 	width: 100px;
 	border: 1px solid #c0c0c0;
 }
+.profile-top{
+	height: 100%;
+}
 .profile-top .avatar
 {
 	height: 250px;
 	width: 250px;
-	margin: 1em 1em 1em 0em;
+	margin-top: 5%;
+	margin-bottom: 3%;
 	border: 1px solid #c0c0c0;
 }
 
 .profile-top .name {
-	display: inline;
-	margin-top: 50px;
-	position: absolute;
+	margin-bottom: 1%;
+	font-size: 350%;
 }
 .profile-top .threewords {
-	display: inline;
-	font-size: 1.2em;
+	margin-bottom: 2%;
+	font-size: 150%;
+	max-width: 100%;
+}
+.profile-top .location {
+	margin-bottom: 2%;
+	font-size: 120%;
+}
+.profile-top .about {
+	margin-bottom: 2%;
+	font-size: 120%;
+	max-width: 50%;
+}
+
+.profile-main{
+	margin-top: 3%;
+}
+.footer {
+	color: #000;
 }
