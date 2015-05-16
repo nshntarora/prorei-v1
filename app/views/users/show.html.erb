@@ -6,9 +6,15 @@
 		<!--User Location
 		<div class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></div>
 	-->
+	</center>
 </div>
-	<div class="profile-main">
-		<h3>Things I know</h3>
-
+<div class="profile-main">
+	<div class="three-achievements">
+		<h2 id="section-title"><center>three things I am most proud of</center></h2>
+			<ol class="achievement-list">
+				<li><%= @user.achievement1 %></li>
+				<li><%= @user.achievement2 %></li>
+				<li><%= @user.achievement3 %></li>
+			</ol>
 	</div>
-</center>
+</div>
