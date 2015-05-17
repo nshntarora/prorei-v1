@@ -1,33 +1,61 @@
 <%= minimal_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f| %>
   <%= f.error_notification :error_html => { :class => "error"} %>
-<center>
 <h2 style="padding: 1em;">Edit Profile</h2>
-  <div class="form-inputs">
-    <%= image_tag(current_user.avatar.url, class: "avatar", style: "margin-bottom: 25px;") %>
-    <%= f.input :avatar, required: true, autofocus: true %>
-    <%= f.input :first_name, required: true, autofocus: true %>
-    <%= f.input :last_name, required: true, autofocus: true %>
-    <%= f.input :word1, required: true, autofocus: true %>
-    <%= f.input :word2, required: true, autofocus: true %>
-    <%= f.input :word3, required: true, autofocus: true %>
-    <%= f.input :achievement1, required: true, autofocus: true %>
-    <%= f.input :achievement2, required: true, autofocus: true %>
-    <%= f.input :achievement3, required: true, autofocus: true %>
-    <%= f.input :user_name, required: true, autofocus: true %>
-    <%= f.input :city, required: true, autofocus: true %>
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :phone, required: true, autofocus: true %>
-    <%= f.input :about, required: true, autofocus: true %>
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+<div class="profile-top">
+<center><%= image_tag(current_user.avatar.url, class: "avatar")%>
+	 <%= f.input :avatar, required: true, autofocus: true %>
+		<div class="name"><b><%= f.input :first_name, required: true, autofocus: true %></b> <%= f.input :last_name, required: true, autofocus: true %></div>
+		<div class="threewords"><%= f.input :word1, required: true, autofocus: true %>.<%= f.input :word2, required: true, autofocus: true %>.<%= f.input :word3, required: true, autofocus: true %></div>
+		<div class="about"><%= f.input :about, required: true, autofocus: true %></div>
+		<!--User Location
+		<div class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></div>
+	-->
+	</center>
+</div>
+<div class="profile-main">
+	<div class="three-achievements">
+		<h2 id="section-title"><center>three <b>things I am most proud of</b></center></h2>
+			<ol class="achievement-list">
+				<li><%= f.input :achievement1, required: true, autofocus: true %></li>
+				<li><%= f.input :achievement2, required: true, autofocus: true %></li>
+				<li><%= f.input :achievement3, required: true, autofocus: true %></li>
+			</ol>
+	</div>
+	<div class="three-projects">
+		<h2 id="section-title"><center>three <b>things I have worked on</b></center></h2>
+			<div class="project">
+				<%= f.input :title1, required: true, autofocus: true %>
+    <%= f.input :description1, required: true, autofocus: true %>
+    <%= f.input :link1, required: true, autofocus: true %>
+			</div>
+			<div class="project">
+				<%= f.input :title1, required: true, autofocus: true %>
+    <%= f.input :description1, required: true, autofocus: true %>
+    <%= f.input :link1, required: true, autofocus: true %>
+			</div>
+			<div class="project">
+				<%= f.input :title1, required: true, autofocus: true %>
+    <%= f.input :description1, required: true, autofocus: true %>
+    <%= f.input :link1, required: true, autofocus: true %>
+			</div>
+	</div>
+	<div class="three-skills">
+		<h2 id="section-title"><center>three <b>things I am best at</b></center></h2>
+			<ol class="skills">
+				<li><%= f.input :skill1, required: true, autofocus: true %></li>
+				<li><%= f.input :skill2, required: true, autofocus: true %></li>
+				<li><%= f.input :skill3, required: true, autofocus: true %></li>
+			</ol>
+	</div>
+</div>
+<% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
     <% end %>
 
     <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false %>
     <%= f.input :password_confirmation, required: false %>
     <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true %>
-  </div>
-
-  <div class="form-actions">
+    <div class="form-actions">
     <%= f.button :submit, "Update" %>
   </div>
 <% end %>
@@ -37,6 +65,3 @@
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
-<br>
-<br>
-</center>

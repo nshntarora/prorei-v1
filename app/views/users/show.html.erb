@@ -17,4 +17,27 @@
 				<li><%= @user.achievement3 %></li>
 			</ol>
 	</div>
+	<div class="three-projects">
+		<h2 id="section-title"><center>three <b>things I have worked on</b></center></h2>
+			<div class="project">
+				<h3><%= link_to @user.title1, @user.link1 %></h3>
+				<p><%= @user.description1 %></p>
+			</div>
+			<div class="project">
+				<h3><%= link_to @user.title2, @user.link2 %></h3>
+				<p><%= @user.description2 %></p>
+			</div>
+			<div class="project">
+				<h3><%= link_to @user.title3, @user.link3 %></h3>
+				<p><%= @user.description3 %></p>
+			</div>
+	</div>
+	<div class="three-skills">
+		<h2 id="section-title"><center>three <b>things I am best at</b></center></h2>
+			<ol class="skills">
+				<li><%= @user.skill1 %></li>
+				<li><%= @user.skill2 %></li>
+				<li><%= @user.skill3 %></li>
+			</ol>
+	</div>
 </div>

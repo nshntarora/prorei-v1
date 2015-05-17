@@ -102,6 +102,14 @@
 	padding-bottom: 3%;
 }
 
+.profile-main p {
+	padding-bottom: 3%;
+}
+
+.profile-main {
+	margin-bottom: 5%;
+}
+
 .achievement-list {
 	font-size: 110%;
 	margin: 0px auto;
@@ -120,4 +128,25 @@
 ::selection {
        background-color: #121212;
        color: #fff;
+}
+
+.three-projects {
+	width: 60%;
+	font-size: 110%;
+	margin: 6% auto 0px;
+}
+
+.three-skills {
+	width: 60%;
+	font-size: 110%;
+	margin: 6% auto 0px;
+	text-align: center;
+}
+
+
+.three-projects a {
+	color: #000;
+}
+.three-projects a:hover {
+	color: #ff6600;
 }
