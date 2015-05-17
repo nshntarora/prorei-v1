@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516120007) do
+ActiveRecord::Schema.define(version: 20150517061400) do
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -46,6 +46,18 @@ ActiveRecord::Schema.define(version: 20150516120007) do
     t.string   "achievement1"
     t.string   "achievement2"
     t.string   "achievement3"
+    t.string   "title1"
+    t.string   "title2"
+    t.string   "title3"
+    t.text     "description1"
+    t.text     "description2"
+    t.text     "description3"
+    t.string   "link1"
+    t.string   "link2"
+    t.string   "link3"
+    t.string   "skill1"
+    t.string   "skill2"
+    t.string   "skill3"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

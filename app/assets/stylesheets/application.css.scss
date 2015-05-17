@@ -111,3 +111,13 @@
 .footer {
 	color: #000;
 }
+
+::-moz-selection {
+       background-color: #121212;
+       color: #fff;
+}
+
+::selection {
+       background-color: #121212;
+       color: #fff;
+}
