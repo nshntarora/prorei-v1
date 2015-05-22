@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150522201952) do
+ActiveRecord::Schema.define(version: 20150522235019) do
 
   create_table "employers", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(version: 20150522201952) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
+    t.text     "description"
+    t.string   "link"
   end
 
   add_index "employers", ["email"], name: "index_employers_on_email", unique: true
