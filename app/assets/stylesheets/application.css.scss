@@ -60,6 +60,7 @@
 }
 .profile-top{
 	height: 100%;
+	margin-bottom: 6%;
 }
 .profile-top .avatar
 {
@@ -83,10 +84,12 @@
 	margin-bottom: 2%;
 	font-size: 120%;
 }
-.profile-top .about {
-	margin-bottom: 2%;
+.profile-main .about {
 	font-size: 120%;
-	max-width: 50%;
+}
+.about-section {
+	margin-bottom: 2%;
+	margin-top: 2%;
 }
 
 .three-achievements {
@@ -108,12 +111,13 @@
 
 .profile-main {
 	margin-bottom: 5%;
+	margin-top: 12%;
+	margin-left: 10%;
+	max-width: 600px;
 }
 
 .achievement-list {
 	font-size: 110%;
-	margin: 0px auto;
-	width: 60%;
 }
 
 .footer {
@@ -131,16 +135,11 @@
 }
 
 .three-projects {
-	width: 60%;
 	font-size: 110%;
-	margin: 6% auto 0px;
 }
 
 .three-skills {
-	width: 60%;
 	font-size: 110%;
-	margin: 6% auto 0px;
-	text-align: center;
 }
 
 
