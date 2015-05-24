@@ -4,6 +4,8 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= image_tag(current_employer.logo.url, class: "avatar", style: "margin-bottom: 25px;") %>
+    <%= f.input :logo, required: true, autofocus: true %>
     <%= f.input :name, required: true, autofocus: true %>
     <%= f.input :description, required: true, autofocus: true %>
     <%= f.input :link, required: true, autofocus: true %>

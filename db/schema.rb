@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150522235019) do
+ActiveRecord::Schema.define(version: 20150524052658) do
 
   create_table "employers", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20150522235019) do
     t.string   "name"
     t.text     "description"
     t.string   "link"
+    t.string   "logo"
   end
 
   add_index "employers", ["email"], name: "index_employers_on_email", unique: true
