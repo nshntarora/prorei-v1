@@ -1,2 +1,7 @@
-<%= @employer.email %>
-<%= image_tag(current_employer.logo.url, class: "company-logo") %>
+<div class="employer-profile">
+<center><%= image_tag(current_employer.logo.url, class: "company-logo") %>
+		<div class="name"><b><%= @employer.name %></b></div>
+		<div class="description"><%= @employer.description %></div>
+		<div class="location"><%= link_to @employer.link, @employer.link %></div>
+	</center>
+</div>

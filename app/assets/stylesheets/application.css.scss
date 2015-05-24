@@ -158,3 +158,21 @@
 	width: 300px;
 	height: auto;
 }
+.employer-profile {
+	margin-top: 10%;
+	margin-bottom: 6%;
+	.name {
+		margin-bottom: 1%;
+		font-size: 350%;
+		margin-top: 3%;
+	}
+	.description {
+		margin-bottom: 2%;
+		font-size: 120%;
+		max-width: 100%;
+		width: 60%;
+	}
+}
+.formwrapper {
+	margin: 5% 0 5% 0;
+}

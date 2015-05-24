@@ -1,4 +1,6 @@
-<h2>Edit Employer</h2>
+<center>
+<div class="formwrapper">
+  <h2>Edit Employer</h2>
 
 <%= minimal_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
@@ -30,3 +32,5 @@
 <p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</div>
+</center>
