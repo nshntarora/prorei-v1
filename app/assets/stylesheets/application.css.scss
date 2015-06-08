@@ -25,5 +25,139 @@
 }
 
 p {
+	font-size: 100%;
+}
+.form-inputs{
+	max-width: 700px;
+}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.bottom-links
+{
+	padding: 1em;
+	padding-bottom: 3em;
+}
+.form-inputs .avatar
+{
+	height: 100px;
+	width: 100px;
+	border: 1px solid #c0c0c0;
+}
+.profile-top{
+	height: 100%;
+	margin-bottom: 6%;
+}
+.profile-top .avatar
+{
+	height: 250px;
+	width: 250px;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+.profile-top .name {
+	margin-bottom: 1%;
+	font-size: 350%;
+}
+.profile-top .threewords {
+	margin-bottom: 2%;
+	font-size: 150%;
+	max-width: 100%;
+}
+.profile-top .location {
+	margin-bottom: 2%;
 	font-size: 120%;
+}
+.profile-main .about {
+	font-size: 120%;
+}
+.about-section {
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.three-achievements {
+	margin-top: 6%;
+	margin-bottom: 2%;
+}
+
+#section-title {
+	margin-bottom: 3%;
+}
+
+.profile-main li {
+	padding-bottom: 3%;
+}
+
+.profile-main p {
+	padding-bottom: 3%;
+}
+
+.profile-main {
+	margin-bottom: 5%;
+	margin-left: 10%;
+	max-width: 600px;
+}
+
+.achievement-list {
+	font-size: 110%;
+}
+
+.footer {
+	color: #000;
+}
+
+::-moz-selection {
+       background-color: #121212;
+       color: #fff;
+}
+
+::selection {
+       background-color: #121212;
+       color: #fff;
+}
+
+.three-projects {
+	font-size: 110%;
+}
+
+.three-skills {
+	font-size: 110%;
+}
+
+
+.three-projects a {
+	color: #000;
+}
+.three-projects a:hover {
+	color: #ff6600;
+}
+
+.profile-main .form-control {
+	width: 100%;
+}
+
+.company-logo {
+	width: 300px;
+	height: auto;
+}
+.employer-profile {
+	margin-top: 10%;
+	margin-bottom: 6%;
+	.name {
+		margin-bottom: 1%;
+		font-size: 350%;
+		margin-top: 3%;
+	}
+	.description {
+		margin-bottom: 2%;
+		font-size: 120%;
+		max-width: 100%;
+		width: 60%;
+	}
+}
+.formwrapper {
+	margin: 5% 0 5% 0;
 }
