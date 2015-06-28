@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150524120803) do
+ActiveRecord::Schema.define(version: 20150628184317) do
 
   create_table "employers", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 20150524120803) do
   add_index "employers", ["reset_password_token"], name: "index_employers_on_reset_password_token", unique: true
 
   create_table "jobs", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.text     "responsibilities"
+    t.text     "additional_info"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
