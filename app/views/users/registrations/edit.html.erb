@@ -40,9 +40,15 @@
     <hr>
       <ol class="skills">
         <li><%= f.input :skill1, required: true, autofocus: true %></li>
+        <%= f.select :proficiency1, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %>
+        <%= f.input :skill_desc1, required: true, autofocus: true %>
         <li><%= f.input :skill2, required: true, autofocus: true %></li>
+        <p><%= f.select :proficiency2, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
+        <p><%= f.input :skill_desc2, required: true, autofocus: true %></p>
         <li><%= f.input :skill3, required: true, autofocus: true %></li>
-      </ol>
+        <p><%= f.select :proficiency3, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
+        <p><%= f.input :skill_desc3, required: true, autofocus: true %></p>
+        </ol>
   </div>
   <div class="three-skills">
     <h2 id="section-title"><b>security</b></h2>
