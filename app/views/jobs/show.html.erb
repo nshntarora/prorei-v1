@@ -1,0 +1,15 @@
+  <h1>
+    <%= @job.title %>
+  </h1>
+  <p>
+    <%= @job.description %>
+  </p>
+  <p>
+    <%= @job.responsibilities %>
+  </p>
+  <p>
+    <%= @job.additional_info %>
+  </p>
+  <br/>
+  <%= link_to "Edit", edit_job_path(@job), class: "btn btn-default" %>
+  <%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-default" %>
