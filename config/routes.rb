@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {registrations: 'registrations'}
   resources :users
   resources :employers
-  resources :jobs 
+  resources :jobs do
+  	resources :responses
+  end
  root 'static_pages#home'
 end

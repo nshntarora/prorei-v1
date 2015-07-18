@@ -1,0 +1,9 @@
+<p>
+  <%= response.response %>
+</p>
+<p>
+  <%= response.user.id %>
+</p>
+
+<%= link_to "Edit", edit_post_comment_path(comment.post, comment), class: "btn btn-default"%>
+<%= link_to "Delete", [comment.post, comment], method: :delete, data: { confirm: "Are you sure?" } %>

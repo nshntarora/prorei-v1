@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150718101103) do
+ActiveRecord::Schema.define(version: 20150718111823) do
 
   create_table "employers", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -45,6 +45,17 @@ ActiveRecord::Schema.define(version: 20150718101103) do
     t.integer  "employer_id"
     t.string   "question"
   end
+
+  create_table "responses", force: true do |t|
+    t.text     "response"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "job_id"
+  end
+
+  add_index "responses", ["job_id"], name: "index_responses_on_job_id"
+  add_index "responses", ["user_id"], name: "index_responses_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
