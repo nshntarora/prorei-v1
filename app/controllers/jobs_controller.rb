@@ -14,7 +14,7 @@ class JobsController < ApplicationController
 	end
 
 	def create
-		@job = current_employer.jobs.build(post_params)
+		@job = current_employer.jobs.build(job_params)
 
 		if @job.save
 			redirect_to @job
@@ -45,7 +45,7 @@ class JobsController < ApplicationController
 		@job = Job.find(params[:id])
 	end
 
-	def post_params
-		params.require(:job).permit(:title, :description, :responsibilities, :additional_info)
+	def job_params
+		params.require(:job).permit(:title, :description, :responsibilities, :additional_info, :question)
 	end
 end
