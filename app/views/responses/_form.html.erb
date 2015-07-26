@@ -1,0 +1,4 @@
+<%= minimal_form_for([@job, @job.responses.build]) do |f| %>
+  <%= f.input :response %>
+  <%= f.submit %>
+<% end %>
