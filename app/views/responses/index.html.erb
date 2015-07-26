@@ -1,0 +1,13 @@
+  <% @responses.each do |response| %>
+    <div class="responses">
+      <p class="response-body">
+        <%= response.response %>
+      </p>
+      <p class="date">
+        Applied
+        <%= time_ago_in_words(response.created_at) %>
+        by
+        <%= response.user_id %>
+      </p>
+    </div>
+  <% end %>

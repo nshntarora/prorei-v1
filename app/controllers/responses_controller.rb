@@ -35,4 +35,9 @@ class ResponsesController < ApplicationController
 		redirect_to job_path(@job)
 	end
 
+	def index
+		@responses = Response.all.order("created_at DESC")
+	end
+	def show
+	end
 end
