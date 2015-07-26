@@ -34,4 +34,5 @@ class ResponsesController < ApplicationController
 		@response.destroy
 		redirect_to job_path(@job)
 	end
+
 end
