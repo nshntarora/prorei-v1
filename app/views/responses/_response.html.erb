@@ -4,6 +4,4 @@
 <p>
   <%= response.user_id %>
 </p>
-
-<%= link_to "Edit", edit_job_response_path(response.job, response), class: "btn btn-default"%>
 <%= link_to "Delete", [response.job, response], method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>

@@ -1,6 +1,6 @@
 class JobsController < ApplicationController
 	before_action :find_job, only: [:show, :edit, :update, :destroy]
-	before_action :authenticate_employer!, except: [:index, :show]
+	before_action :authenticate_employer!, except: [:index]
 
 	def index
 		@jobs = Job.all.order("created_at DESC")

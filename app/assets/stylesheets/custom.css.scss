@@ -1100,13 +1100,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #008080;
+  color: #5a2ca0;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #008080;
-  border-bottom: 3px solid #008080;
+  color: #5a2ca0;
+  border-bottom: 3px solid #5a2ca0;
 }
 a:focus {
   outline: thin dotted;
@@ -1341,7 +1341,7 @@ mark,
   color: #999999;
 }
 .text-primary {
-  color: #008080;
+  color: #5a2ca0;
 }
 a.text-primary:hover {
   color: #106a8c;
@@ -1372,7 +1372,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #008080;
+  background-color: #5a2ca0;
 }
 a.bg-primary:hover {
   background-color: #106a8c;
@@ -3041,8 +3041,8 @@ fieldset[disabled] .btn {
 }
 .btn-default {
   color: #fff;
-background-color: #008080;
-border-color: #025151;
+background-color: #5a2ca0;
+border-color: #330080;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -3051,8 +3051,8 @@ border-color: #025151;
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #fff;
-  background-color: #008080;
-  border-color: #025151;
+  background-color: #5a2ca0;
+  border-color: #330080;
 }
 .btn-default:active,
 .btn-default.active,
@@ -3077,12 +3077,12 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #008080;
-  border-color: #025151;
+  background-color: #5a2ca0;
+  border-color: #330080;
 }
 .btn-default .badge {
   color: #fff;
-  background-color: #008080;
+  background-color: #5a2ca0;
 }
 .btn-primary {
   color: #ffffff;
@@ -3310,7 +3310,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #008080;
+  color: #5a2ca0;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3480,7 +3480,7 @@ tbody.collapse.in {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #008080;
+  background-color: #5a2ca0;
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3900,7 +3900,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ffffff;
-  border-color: #008080;
+  border-color: #5a2ca0;
 }
 .nav .nav-divider {
   height: 1px;
@@ -6607,8 +6607,8 @@ button.close {
 .btn-default:hover,
 .btn-default:focus,
 .btn-group.open .dropdown-toggle.btn-default {
-background-color: #008080;
-border-color: #025151;
+background-color: #5a2ca0;
+border-color: #330080;
 color: #fff;
 }
 .btn-primary:hover,
