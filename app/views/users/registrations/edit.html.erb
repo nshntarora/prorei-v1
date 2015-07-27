@@ -41,12 +41,15 @@
       <ol class="skills">
         <li><%= f.input :skill1, required: true, autofocus: true %></li>
         <%= f.select :proficiency1, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %>
+        <p><%= f.select :experience1, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
         <%= f.input :skill_desc1, required: true, autofocus: true %>
         <li><%= f.input :skill2, required: true, autofocus: true %></li>
         <p><%= f.select :proficiency2, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
+        <p><%= f.select :experience2, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
         <p><%= f.input :skill_desc2, required: true, autofocus: true %></p>
         <li><%= f.input :skill3, required: true, autofocus: true %></li>
         <p><%= f.select :proficiency3, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
+        <p><%= f.select :experience3, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
         <p><%= f.input :skill_desc3, required: true, autofocus: true %></p>
         </ol>
   </div>

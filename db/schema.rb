@@ -11,7 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150726111848) do
+ActiveRecord::Schema.define(version: 20150727060945) do
+
   create_table "employers", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -47,10 +48,10 @@ ActiveRecord::Schema.define(version: 20150726111848) do
 
   create_table "responses", force: true do |t|
     t.text     "response"
+    t.integer  "job_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
-    t.integer  "job_id"
   end
 
   add_index "responses", ["job_id"], name: "index_responses_on_job_id"
@@ -107,6 +108,9 @@ ActiveRecord::Schema.define(version: 20150726111848) do
     t.string   "proficiency1"
     t.string   "proficiency2"
     t.text     "proficiency3"
+    t.string   "experience1"
+    t.string   "experience2"
+    t.string   "experience3"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
