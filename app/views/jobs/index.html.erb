@@ -1,3 +1,6 @@
+  <% Category.all.each do |category| %>
+  <%= link_to category.name, jobs_path(category: category.name) %>
+  <% end %>
   <% @jobs.each do |job| %>
     <div class="job">
       <h2 class="title">
