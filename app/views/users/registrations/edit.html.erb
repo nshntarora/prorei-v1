@@ -14,7 +14,11 @@
     <%= f.input :about, required: true, autofocus: true %>
     <%= f.input :email, required: true, autofocus: true %>
     <%= f.input :phone, required: true, autofocus: true %>
-    <%= f.input :city, required: true, autofocus: true %>
+    <%= f.select :city,
+  City.all.map { |u| [u.name, u.name] },
+               { include_blank: true },
+               { class: 'chosen-select' }
+%>
     </p>
   </div>
   <div class="three-achievements">
