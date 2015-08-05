@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150731081732) do
+ActiveRecord::Schema.define(version: 20150805080556) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -48,6 +48,12 @@ ActiveRecord::Schema.define(version: 20150731081732) do
   add_index "employers", ["email"], name: "index_employers_on_email", unique: true
   add_index "employers", ["reset_password_token"], name: "index_employers_on_reset_password_token", unique: true
 
+  create_table "job_types", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "jobs", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -59,6 +65,7 @@ ActiveRecord::Schema.define(version: 20150731081732) do
     t.string   "question"
     t.integer  "category_id"
     t.string   "location"
+    t.integer  "job_type_id"
   end
 
   create_table "responses", force: true do |t|

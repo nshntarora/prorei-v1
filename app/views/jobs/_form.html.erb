@@ -1,5 +1,6 @@
 <%= minimal_form_for @job do |f| %>
 	<%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
+  <%= f.collection_select :job_type_id, JobType.all, :id, :name, {prompt: "Choose Job Type"} %>
   <%= f.input :title %>
   <%= f.select :location,
   City.all.map { |u| [u.name, u.name] },
