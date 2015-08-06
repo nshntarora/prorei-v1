@@ -29,9 +29,13 @@
     <%= link_to "View Responses", job_responses_path(@job), class: "btn btn-default" %>
     <% end %>
   </p>
+  <% if current_user.responses.any? == true && @job.responses.any? == true %>
+      <p>You have already applied for this job</p>
+  <% else %>
   <p>
     <%= render "responses/form" %>
   </p>
+  <% end %>
   <br/>
   <% if @job.employer=current_employer %>
     <%= link_to "Edit", edit_job_path(@job), class: "btn btn-default" %>
