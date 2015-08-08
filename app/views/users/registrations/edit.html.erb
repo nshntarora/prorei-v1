@@ -10,12 +10,12 @@
     <h2 id="section-title"><b>personal information</b></h2>
     <hr>
       <p class="about"><%= image_tag(current_user.avatar.url, class: "avatar", style: "margin-bottom: 25px;") %>
-      <%= f.input :avatar, required: true, autofocus: true %>
-      <%= f.input :first_name, required: true, autofocus: true %>
-    <%= f.input :last_name, required: true, autofocus: true %>
-    <%= f.input :about, required: true, autofocus: true %>
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :phone, required: true, autofocus: true %>
+      <%= f.input :avatar, required: true %>
+      <%= f.input :first_name, required: true %>
+    <%= f.input :last_name, required: true %>
+    <%= f.input :about, required: true %>
+    <%= f.input :email, required: true %>
+    <%= f.input :phone, required: true %>
     <%= f.select :city,
   City.all.map { |u| [u.name, u.name] },
                { include_blank: true },
@@ -27,36 +27,36 @@
     <h2 id="section-title"><b>three words that define me</b></h2>
     <hr>
       <ol class="achievement-list">
-        <li><%= f.input :word1, required: true, autofocus: true %></li>
-        <li><%= f.input :word2, required: true, autofocus: true %></li>
-        <li><%= f.input :word3, required: true, autofocus: true %></li>
+        <li><%= f.input :word1, required: true %></li>
+        <li><%= f.input :word2, required: true %></li>
+        <li><%= f.input :word3, required: true %></li>
       </ol>
   </div>
     <div class="three-achievements">
     <h2 id="section-title"><b>three things i am most proud of</b></h2>
     <hr>
       <ol class="achievement-list">
-        <li><%= f.input :achievement1, required: true, autofocus: true %></li>
-        <li> <%= f.input :achievement2, required: true, autofocus: true %></li>
-        <li><%= f.input :achievement3, required: true, autofocus: true %></li>
+        <li><%= f.input :achievement1, required: true %></li>
+        <li> <%= f.input :achievement2, required: true %></li>
+        <li><%= f.input :achievement3, required: true %></li>
       </ol>
   </div>
   <div class="three-skills">
     <h2 id="section-title"><b>three things I am best at</b></h2>
     <hr>
       <ol class="skills">
-        <li><%= f.input :skill1, required: true, autofocus: true %></li>
-        <%= f.select :proficiency1, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %>
-        <p><%= f.select :experience1, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
-        <%= f.input :skill_desc1, required: true, autofocus: true %>
-        <li><%= f.input :skill2, required: true, autofocus: true %></li>
-        <p><%= f.select :proficiency2, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
-        <p><%= f.select :experience2, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
-        <p><%= f.input :skill_desc2, required: true, autofocus: true %></p>
-        <li><%= f.input :skill3, required: true, autofocus: true %></li>
-        <p><%= f.select :proficiency3, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true, autofocus: true %></p>
-        <p><%= f.select :experience3, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true, autofocus: true %></p>
-        <p><%= f.input :skill_desc3, required: true, autofocus: true %></p>
+        <li><%= f.input :skill1, required: true %></li>
+        <%= f.select :proficiency1, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true %>
+        <p><%= f.select :experience1, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true %></p>
+        <%= f.input :skill_desc1, required: true %>
+        <li><%= f.input :skill2, required: true %></li>
+        <p><%= f.select :proficiency2, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true %></p>
+        <p><%= f.select :experience2, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true %></p>
+        <p><%= f.input :skill_desc2, required: true %></p>
+        <li><%= f.input :skill3, required: true %></li>
+        <p><%= f.select :proficiency3, ['Beginner', 'Intermediate', 'Expert'], prompt: "Choose Proficiency", required: true %></p>
+        <p><%= f.select :experience3, ['less than 1', '1+', '2+','3+','4+'], prompt: "How many years?", required: true %></p>
+        <p><%= f.input :skill_desc3, required: true %></p>
         </ol>
   </div>
   <div class="three-skills">
