@@ -4986,6 +4986,17 @@ color: #FFF;
 .alert-alert .alert-link {
   color: #e6e6e6;
 }
+.alert-error {
+  background-color: #ff4136;
+  border-color: #AD0A00;
+  color: #ffffff;
+}
+.alert-error hr {
+  border-top-color: #e90d00;
+}
+.alert-error .alert-link {
+  color: #e6e6e6;
+}
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0;
