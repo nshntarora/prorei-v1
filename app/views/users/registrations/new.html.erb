@@ -1,6 +1,6 @@
 <%= minimal_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-
-<%= f.error_notification %>
+<%= f.error_notification :error_html => { :class => "error"} %>
+<%= devise_error_messages! %>
 <div class="formwrapper">
 <center>
 <h1 style="padding: 1em;"><b>register as a <font color="#5a2ca0">jobseeker</font></b></h2>
