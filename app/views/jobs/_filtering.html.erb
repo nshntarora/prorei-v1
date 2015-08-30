@@ -11,5 +11,11 @@
   <%= f.collection_select(:category_name_eq, Category.all, :name, :name) %>
   <%= f.label :job_type_name_eq, "Job Type" %>
   <%= f.collection_select(:job_type_name_eq, JobType.all, :name, :name) %>
+  <%= f.label :employer_id_eq, "Where at?" %>
+  <%= f.select :employer_id_eq,
+  Employer.all.map { |u| [u.name, u.id] },
+               { include_blank: true },
+               { class: 'chosen-select' }
+  %>
   <%= f.submit %>
 <% end %>
