@@ -1,7 +1,15 @@
 <%= search_form_for @q do |f| %>
   <%= f.label :title_cont, "Title of the job" %>
   <%= f.search_field :title_cont %>
-  <%= f.label :location_cont, "Where at?" %>
-  <%= f.search_field :location_cont %>
+  <%= f.label :location_eq, "Where at?" %>
+  <%= f.select :location_eq,
+  City.all.map { |u| [u.name, u.name] },
+               { include_blank: true },
+               { class: 'chosen-select' }
+  %>
+  <%= f.label :category_name_eq, "Category" %>
+  <%= f.collection_select(:category_name_eq, Category.all, :name, :name) %>
+  <%= f.label :job_type_name_eq, "Job Type" %>
+  <%= f.collection_select(:job_type_name_eq, JobType.all, :name, :name) %>
   <%= f.submit %>
 <% end %>
