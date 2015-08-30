@@ -1,0 +1,7 @@
+<%= search_form_for @q do |f| %>
+  <%= f.label :title_cont, "Title of the job" %>
+  <%= f.search_field :title_cont %>
+  <%= f.label :location_cont, "Where at?" %>
+  <%= f.search_field :location_cont %>
+  <%= f.submit %>
+<% end %>
