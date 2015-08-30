@@ -4,7 +4,7 @@ class JobsController < ApplicationController
 
 	def index
 			@q = Job.ransack(params[:q])
-			@jobs = @q.result.page params[:job_params]
+			@jobs = @q.result.page(params[:page])
 	end
 
 	def show
