@@ -1,4 +1,4 @@
-  <% @responses.each do |response| %>
+<% @job.responses.each do |response| %>
     <div class="responses">
       <p class="response-body">
         <%= response.response %>
@@ -8,6 +8,14 @@
         <%= time_ago_in_words(response.created_at) %>
         by
         <%= response.user_id %>
+        <% if response.shortlisted_by_employer==false %>
+        <%= link_to "Shortlist", [response.job, response], method: :put %>
+        <% else %>
+        <%= link_to "Remove from Shortlist", [response.job, response], method: :patch %>
+        <% end %>
+        <%= response.shortlisted_by_employer %>
+      </p>
+      <p class="date">
       </p>
     </div>
   <% end %>
