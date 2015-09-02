@@ -1,4 +1,5 @@
 <% @job.responses.each do |response| %>
+<% if @job.responses>=1 %>
     <div class="responses">
       <p class="response-body">
         <%= response.response %>
@@ -18,4 +19,7 @@
       <p class="date">
       </p>
     </div>
+  <% else %>
+    <p> No one has responded to your job listing yet. </p>
+  <% end %>
   <% end %>
