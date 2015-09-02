@@ -1,0 +1,18 @@
+<% @job.responses.each do |response| %>
+<% if response.shortlisted_by_employer==true %>
+    <div class="responses">
+      <p class="response-body">
+        <%= response.response %>
+      </p>
+      <p class="date">
+        Applied
+        <%= time_ago_in_words(response.created_at) %>
+        by
+        <%= response.user_id %>
+        <%= response.shortlisted_by_employer %>
+      </p>
+      <p class="date">
+      </p>
+    </div>
+    <% end %>
+  <% end %>

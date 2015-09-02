@@ -31,6 +31,8 @@ class ResponsesController < ApplicationController
 		end
 	end
 
+
+
 	def destroy
 		@job = Job.find(params[:job_id])
 		@response = @job.responses.find(params[:id])

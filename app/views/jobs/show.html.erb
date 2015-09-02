@@ -27,6 +27,7 @@
     <br>
     <% if @job.employer=current_employer %>
     <%= link_to "View Responses", job_responses_path(@job), class: "btn btn-default" %>
+    <%= link_to "View Shortlisted", job_shortlists_path(@job), class: "btn btn-default" %>
     <% end %>
   </p>
   <% if current_user %>

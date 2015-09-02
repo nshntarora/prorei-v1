@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   resources :employers
   resources :jobs do
   	resources :responses
+    resources :shortlists
   end
 end
