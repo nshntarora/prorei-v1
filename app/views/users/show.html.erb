@@ -1,16 +1,21 @@
-<div class="profile-top">
-<center><%= image_tag("default.jpg", class: "avatar")%>
+<div class="container-fluid">
+<div class="row user-profile">
+	<div class="col-md-6">
+		<div class="row">
+	<div class="col-md-4">
+	<%= image_tag("default.jpg", class: "avatar")%>
+</div>
+<div class="col-md-8">
 		<div class="name"><b>#<%= @user.id %></b></div>
 		<div class="threewords"><%= @user.word1 %>.<%= @user.word2 %>.<%= @user.word3 %></div>
 		<div class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></div>
-	</center>
-</div>
-<div class="profile-main">
-<div class="about-section">
-		<h2 id="section-title"><b>a small introduction</b></h2>
-		<hr>
-			<p class="about"><%= @user.about %></p>
+		<div class="about-section">
+				<hr>
+					<p class="about"><%= @user.about %></p>
+			</div>
 	</div>
+	</div>
+
 	<br>
 	<div class="three-achievements">
 		<h2 id="section-title"><b>three things I am most proud of</b></h2>
@@ -21,24 +26,36 @@
 				<li><%= @user.achievement3 %></li>
 			</ol>
 	</div>
-	<br>
+</div>
+	<div class="col-md-6">
 	<div class="three-skills">
 		<h2 id="section-title"><b>three things I am best at</b></h2>
 		<hr>
-			<ol class="skills">
-				<li><%= @user.skill1 %></li>
-				<p><%= @user.proficiency1 %></p>
-				<p><%= @user.experience1 %> years of work</p>
-				<p><%= @user.skill_desc1 %>
-				<li><%= @user.skill2 %></li>
-				<p><%= @user.proficiency1 %></p>
-				<p><%= @user.experience2 %> years of work</p>
-				<p><%= @user.skill_desc1 %>
-				<li><%= @user.skill3 %></li>
-				<p><%= @user.proficiency1 %></p>
-				<p><%= @user.experience3 %> years of work</p>
-				<p><%= @user.skill_desc1 %>
-			</ol>
+			<div class="accordion">
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1"><%= @user.skill1 %><span class="skill-meta"><%= @user.proficiency1 %>&nbsp;&nbsp;&nbsp;<%= @user.experience1 %> years</span></a>
+        
+        <div id="accordion-1" class="accordion-section-content">
+            <p><%= @user.skill_desc1 %></p>
+        </div>
+    </div>
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2"><%= @user.skill2 %><span class="skill-meta"><%= @user.proficiency2 %>&nbsp;&nbsp;&nbsp;<%= @user.experience2 %> years</span></a>
+        
+        <div id="accordion-2" class="accordion-section-content">
+            <p><%= @user.skill_desc2 %></p>
+        </div>
+    </div>
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3"><%= @user.skill3 %><span class="skill-meta"><%= @user.proficiency3 %>&nbsp;&nbsp;&nbsp;<%= @user.experience3 %> years</span></a>
+        
+        <div id="accordion-3" class="accordion-section-content">
+            <p><%= @user.skill_desc3 %></p>
+        </div>
+    </div>
+		</div>
 	</div>
 	<br>
+	</div>
+</div>
 </div>
