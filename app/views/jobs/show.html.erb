@@ -1,15 +1,16 @@
-  <h1>
+ <div class="job-header">
+  <h1 class="job-title">
     <%= @job.title %>
   </h1>
+  <div class="job-metadata">
   <p>
-    <%= @job.category.name %>
+    <span class="glyphicon glyphicon-briefcase"></span> <%= @job.category.name %> &nbsp;
+    <span class="glyphicon glyphicon-time"></span> <%= @job.job_type.name %> &nbsp;
+    <span class="glyphicon glyphicon-map-marker"></span> <%= @job.location %> &nbsp;
   </p>
-  <p>
-    <%= @job.job_type.name %>
-  </p>
-  <p>
-    <%= @job.location %>
-  </p>
+</div>
+</div>
+<div class="job-details">
   <p>
     <%= @job.description %>
   </p>
@@ -19,7 +20,8 @@
   <p>
     <%= @job.additional_info %>
   </p>
-  <p>
+<div class="job-question">
+  <p id="question">
     <%= @job.question %>
   </p>
   <p>
@@ -44,3 +46,5 @@
     <%= link_to "Edit", edit_job_path(@job), class: "btn btn-default" %>
     <%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-default" %>
   <% end %>
+</div>
+</div>

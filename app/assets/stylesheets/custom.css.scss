@@ -209,3 +209,52 @@ p {
 .skill-meta {
 	float: right;
 }
+.filters
+{
+	position: fixed;
+}
+.content-wrapper
+{
+	max-width: 1250px;
+	margin: 0px auto;
+}
+.jobs
+{
+	float: right;
+	padding-left: 3%;
+}
+.job_search label {
+	margin-top: 2%;
+}
+.job_search .btn {
+	margin-top: 2%;
+}
+.job-header
+{
+	max-width: 700px;
+	margin: 0px auto;
+}
+.job-title
+{
+	font-size: 350%;
+	font-weight: bold;
+	margin-bottom: 3%;
+	color: #5a2ca0;
+}
+.job-metadata
+{
+	font-size: 120%;
+	margin-bottom: 3%;
+}
+.job-details {
+	margin: 0px auto;
+	max-width: 700px;
+}
+.job-question 
+{
+	font-size: 120%;
+}
+#question {
+	font-size: 150%;
+	font-weight: bold;
+}
