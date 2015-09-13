@@ -1,3 +1,5 @@
+<div class="row">
+  <div class="col-md-8">
  <div class="job-header">
   <h1 class="job-title">
     <%= @job.title %>
@@ -20,6 +22,9 @@
   <p>
     <%= @job.additional_info %>
   </p>
+</div>
+</div>
+<div class="col-md-4">
 <div class="job-question">
   <p id="question">
     <%= @job.question %>
@@ -46,5 +51,6 @@
     <%= link_to "Edit", edit_job_path(@job), class: "btn btn-default" %>
     <%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "btn btn-default" %>
   <% end %>
+</div>
 </div>
 </div>

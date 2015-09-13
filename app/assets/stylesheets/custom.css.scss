@@ -12,7 +12,6 @@ p {
 	font-size: 100%;
 }
 .form-inputs{
-	max-width: 700px;
 }
 .wrapper {
 	max-width: 1000px;
@@ -253,8 +252,17 @@ p {
 .job-question 
 {
 	font-size: 120%;
+	margin-top: 7%;
 }
 #question {
 	font-size: 150%;
 	font-weight: bold;
+}
+.skill-meta-dropdowns
+{
+	margin-bottom: 15px;
+}
+.security{
+	width: 700px;
+	margin: 0px auto;
 }
