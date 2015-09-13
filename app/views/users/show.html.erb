@@ -1,3 +1,11 @@
+<% @counter=0 %>
+<%current_employer.jobs.each do |job|%>
+<%job.responses.each do |response| %>
+<% if response.user_id == @user.id %>
+<% @counter=@counter+1 %>
+<% end %>
+<% end %>
+<% end %>
 <div class="container-fluid">
 <div class="row user-profile">
 	<div class="col-md-6">
@@ -9,8 +17,12 @@
 		<div class="name"><b>#<%= @user.id %></b></div>
 		<div class="threewords"><%= @user.word1 %>.<%= @user.word2 %>.<%= @user.word3 %></div>
 		<div class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></div>
+		<div class="email-button">
+			<% if @counter>0 %>
+			<a href="mailto:<%=@user.email%>" class="btn btn-default">Email User</a>
+			<% end %>
+		</div>
 		<div class="about-section">
-				<hr>
 					<p class="about"><%= @user.about %></p>
 			</div>
 	</div>
