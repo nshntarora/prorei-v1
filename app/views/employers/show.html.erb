@@ -1,9 +1,14 @@
 <div class="employer-profile">
+<div class="row">
+  <div class="col-md-6">
 <center><%= image_tag(current_employer.logo.url, class: "company-logo") %>
 		<div class="name"><b><%= @employer.name %></b></div>
 		<div class="description"><%= @employer.description %></div>
 		<div class="location"><%= link_to @employer.link, @employer.link %></div>
 	</center>
+</div>
+<div class="col-md-6">
+  <h3><b>Jobs Posted</b></h3>
 	<% @employer.jobs.each do |job| %>
     <div class="job">
       <h2 class="title">
@@ -15,4 +20,6 @@
       </p>
     </div>
   <% end %>
+</div>
+</div>
 </div>

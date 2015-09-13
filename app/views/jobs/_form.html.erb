@@ -1,15 +1,22 @@
 <%= minimal_form_for @job do |f| %>
-	<%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
+
+	<div id="dropdowns">
+  <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
   <%= f.collection_select :job_type_id, JobType.all, :id, :name, {prompt: "Choose Job Type"} %>
+  </div>
   <%= f.input :title %>
+  <div id="dropdowns">
   <%= f.select :location,
   City.all.map { |u| [u.name, u.name] },
                { include_blank: true },
                { class: 'chosen-select' }
 %>
+</div>
   <%= f.input :description %>
   <%= f.input :responsibilities %>
   <%= f.input :additional_info %>
   <%= f.input :question %>
-  <%= f.submit %>
+  <center>
+  <%= f.submit 'Publish Your Listing', class: 'btn btn-default' %>
+</center>
 <% end %>

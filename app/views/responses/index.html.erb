@@ -1,25 +1,26 @@
+<h1 class="responses-page-title">Responses to <font color="#5a2ca0"><%= @job.title %></font></h1>
+<center class="center-button"><%= link_to "View Shortlisted", job_shortlists_path(@job), class: "btn btn-default" %></center>
+<% if @job.responses.count>=1 %>
 <% @job.responses.each do |response| %>
-<% if @job.responses>=1 %>
     <div class="responses">
       <p class="response-body">
         <%= response.response %>
       </p>
-      <p class="date">
+      <p class="response-meta">
         Applied
         <%= time_ago_in_words(response.created_at) %>
-        by
-        <%= response.user_id %>
+        ago by
+        #<%= response.user_id %>
+        <span class="shortlist-button">
         <% if response.shortlisted_by_employer==false %>
-        <%= link_to "Shortlist", [response.job, response], method: :put %>
+        <%= link_to "Shortlist", [response.job, response], class: 'btn btn-default', method: :put %>
         <% else %>
-        <%= link_to "Remove from Shortlist", [response.job, response], method: :patch %>
+        <%= link_to "Remove from Shortlist", [response.job, response], class: 'btn btn-default', method: :patch %>
         <% end %>
-        <%= response.shortlisted_by_employer %>
-      </p>
-      <p class="date">
+      </span>
       </p>
     </div>
+  <% end %>
   <% else %>
     <p> No one has responded to your job listing yet. </p>
-  <% end %>
   <% end %>

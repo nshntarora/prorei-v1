@@ -1,20 +1,21 @@
+<h1 class="responses-page-title">Shortlisted Responses to <font color="#5a2ca0"><%= @job.title %></font></h1>
+<center class="center-button"><%= link_to "Back to Responses", job_responses_path(@job), class: "btn btn-default" %></center>
 <% @job.responses.each do |response| %>
 <% if response.shortlisted_by_employer==true %>
     <div class="responses">
       <p class="response-body">
         <%= response.response %>
       </p>
-      <p class="date">
+      <p class="response-meta">
         Applied
         <%= time_ago_in_words(response.created_at) %>
-        by
+        ago by
         <%= response.user_id %>
-        <%= response.shortlisted_by_employer %>
-      </p>
-      <p class="date">
+        <span class="shortlist-button">
+        <a href="http://prorei.com/users/<%= response.user_id %>" class="btn btn-default">Visit Profile</a>
+      </span>
       </p>
     </div>
-  <% else %>
-  <p> You haven't shortlisted any responses yet. </p>
-    <% end %>
   <% end %>
+    <% end %>
+    <center><p>If you don't see any responses here, it means you haven't shortlisted any of them yet.</p></center>

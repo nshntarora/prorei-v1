@@ -12,6 +12,7 @@ p {
 	font-size: 100%;
 }
 .form-inputs{
+	max-width: 700px;
 }
 .wrapper {
 	max-width: 1000px;
@@ -127,18 +128,16 @@ p {
 	height: auto;
 }
 .employer-profile {
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-bottom: 6%;
 	.name {
 		margin-bottom: 1%;
-		font-size: 350%;
+		font-size: 250%;
 		margin-top: 3%;
 	}
 	.description {
 		margin-bottom: 2%;
 		font-size: 120%;
-		max-width: 100%;
-		width: 60%;
 	}
 }
 .formwrapper {
@@ -248,6 +247,7 @@ p {
 .job-details {
 	margin: 0px auto;
 	max-width: 700px;
+	line-height: 1.6em;
 }
 .job-question 
 {
@@ -265,4 +265,44 @@ p {
 .security{
 	width: 700px;
 	margin: 0px auto;
+}
+.new-job-form {
+	max-width: 700px;
+	margin: 0px auto;
+}
+.new-job-form #title {
+	text-align: center;
+	margin-bottom: 5%;
+	}
+.new-job-form #dropdowns {
+	margin-bottom: 15px;
+}
+.job-actions {
+	margin-top: 3%;
+}
+.responses {
+	max-width: 700px;
+	margin: 0px auto;
+}
+.response-body{
+	margin-bottom: 2%;
+}
+.response-meta {
+	margin-bottom: 2%;
+	background-color: #c0c0c0;
+	padding: 5px 5px 5px 15px;
+	line-height: 2.6em;
+}
+.responses .shortlist-button
+{
+	float: right;
+}
+.responses-page-title {
+	text-align: center;
+	margin-bottom: 5%;
+	font-weight: bold;
+	}
+
+.center-button{
+	margin-bottom: 2%;
 }
