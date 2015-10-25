@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150830204620) do
+ActiveRecord::Schema.define(version: 20151025141443) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20150830204620) do
     t.integer  "category_id"
     t.string   "location"
     t.integer  "job_type_id"
+    t.date     "expire"
   end
 
   create_table "responses", force: true do |t|

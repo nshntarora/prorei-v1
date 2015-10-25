@@ -4,6 +4,7 @@
 </div>
 <div class="jobs col-md-9">
   <% @jobs.each do |job| %>
+  <% if job.expire.future? %>
     <div class="job">
       <h2 class="title">
         <%= link_to job.title, job %>
@@ -15,6 +16,7 @@
         <%= job.employer.name %>
       </p>
     </div>
+    <% end %>
   <% end %>
   <%= paginate @jobs %>
 </div>
