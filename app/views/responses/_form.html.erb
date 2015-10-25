@@ -1,4 +1,4 @@
 <%= minimal_form_for([@job, @job.responses.build]) do |f| %>
   <%= f.input :response, hint: "you get only one chance, use it carefully" %>
-  <%= f.submit %>
+  <%= f.submit "Create Response", class: "btn btn-default" %>
 <% end %>

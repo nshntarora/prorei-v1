@@ -1,13 +1,11 @@
-<% if current_employer %>
-<% @counter=0 %>
-<%current_employer.jobs.each do |job|%>
-<%job.responses.each do |response| %>
-<% if response.user_id == @user.id %>
-<% @counter=@counter+1 %>
-<% end %>
-<% end %>
-<% end %>
-<% end %>
+<% if profileincomplete(@user) %>
+<center>
+<h4 class="well" style="width: 60%; line-height: 1.6em;">The profile is incomplete. If you are the owner of this profile please go to the edit profile page and complete your profile.
+<br>
+If incomplete you won't be able to apply for a job, and the employer won't be able to view your profile.
+</h4>
+</center>
+<% else %>
 <div class="container-fluid">
 <div class="row user-profile">
 	<div class="col-md-6">
@@ -21,7 +19,7 @@
 		<div class="location"><span class="glyphicon glyphicon-map-marker"></span> <%= @user.city %></div>
 		<div class="email-button">
 			<% if current_employer %>
-			<% if @counter>0 %>
+			<% if userapplied(@user, current_employer)>0 %>
 			<a href="mailto:<%=@user.email%>" class="btn btn-default">Email User</a>
 			<% end %>
 			<% end %>
@@ -75,3 +73,4 @@
 	</div>
 </div>
 </div>
+<% end %>

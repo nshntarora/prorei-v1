@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150830213239) do
+ActiveRecord::Schema.define(version: 20150830204620) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -75,17 +75,10 @@ ActiveRecord::Schema.define(version: 20150830213239) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "shortlisted_by_employer", default: false
-    t.integer  "response_id"
   end
 
   add_index "responses", ["job_id"], name: "index_responses_on_job_id"
   add_index "responses", ["user_id"], name: "index_responses_on_user_id"
-
-  create_table "states", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -103,15 +96,8 @@ ActiveRecord::Schema.define(version: 20150830213239) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "user_name"
-    t.string   "mobile"
-    t.string   "type"
-    t.integer  "mobile_number"
     t.string   "phone"
     t.text     "about"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
     t.string   "avatar"
     t.string   "city"
     t.string   "word1"
@@ -120,15 +106,6 @@ ActiveRecord::Schema.define(version: 20150830213239) do
     t.string   "achievement1"
     t.string   "achievement2"
     t.string   "achievement3"
-    t.string   "title1"
-    t.string   "title2"
-    t.string   "title3"
-    t.text     "description1"
-    t.text     "description2"
-    t.text     "description3"
-    t.string   "link1"
-    t.string   "link2"
-    t.string   "link3"
     t.string   "skill1"
     t.string   "skill2"
     t.string   "skill3"
@@ -141,7 +118,6 @@ ActiveRecord::Schema.define(version: 20150830213239) do
     t.string   "experience1"
     t.string   "experience2"
     t.string   "experience3"
-    t.integer  "city_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

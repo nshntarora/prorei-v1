@@ -9,24 +9,24 @@
 <body>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
-          <center><%= link_to image_tag("prorei.png", :class => "navbar-brand"), root_path %>
+          <center><%= link_to image_tag("logo.png", :class => "navbar-brand"), root_path %>
           </center>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% if user_signed_in? %>
-          <li><%= link_to "List Jobs", jobs_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Profile", current_user, :class => "btn btn-default" %></li>
-          <li><%= link_to "Edit Profile", edit_user_registration_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete, :class => "btn btn-default"  %></li>
+          <li><%= link_to "List Jobs", jobs_path %></li>
+          <li><%= link_to "Profile", current_user %></li>
+          <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+          <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete  %></li>
           <% elsif employer_signed_in? %>
-          <li><%= link_to "Post a Job", new_job_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Profile", current_employer, :class => "btn btn-default" %></li>
-          <li><%= link_to "Edit Profile", edit_employer_registration_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Log Out", destroy_employer_session_path, :method => :delete, :class => "btn btn-default"  %></li>
+          <li><%= link_to "Post a Job", new_job_path %></li>
+          <li><%= link_to "Profile", current_employer %></li>
+          <li><%= link_to "Edit Profile", edit_employer_registration_path %></li>
+          <li><%= link_to "Log Out", destroy_employer_session_path, :method => :delete  %></li>
         <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Sign In", new_user_session_path, :class => "btn btn-default" %></li>
-          <li><%= link_to "Employer", new_employer_session_path, :class => "btn btn-default" %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
+          <li><%= link_to "Employer", new_employer_session_path %></li>
         <% end %>
         </ul>
         </div>

@@ -7,7 +7,6 @@ class Employer < ActiveRecord::Base
 
   mount_uploader :logo, LogoUploader
 
-  validates_presence_of   :logo
   validates_integrity_of  :logo
   validates_processing_of :logo
 end

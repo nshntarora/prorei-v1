@@ -12,7 +12,7 @@
         ago by
         <%= response.user_id %>
         <span class="shortlist-button">
-        <a href="http://prorei.com/users/<%= response.user_id %>" class="btn btn-default">Visit Profile</a>
+        <%= link_to "Visit Profile", user_path(response.user_id), class: "btn btn-default" %>
       </span>
       </p>
     </div>
