@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025141443) do
+ActiveRecord::Schema.define(version: 20151028063249) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -67,6 +67,7 @@ ActiveRecord::Schema.define(version: 20151025141443) do
     t.string   "location"
     t.integer  "job_type_id"
     t.date     "expire"
+    t.integer  "duration"
   end
 
   create_table "responses", force: true do |t|

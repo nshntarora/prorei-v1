@@ -1,18 +1,19 @@
 <%= minimal_form_for @job do |f| %>
 
 	<div id="dropdowns">
-  <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"} %>
-  <%= f.collection_select :job_type_id, JobType.all, :id, :name, {prompt: "Choose Job Type"} %>
+  <%= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}, class: "form-control" %>
+  <%= f.collection_select :job_type_id, JobType.all, :id, :name, {prompt: "Choose Job Type"}, class: "form-control" %>
   </div>
   <%= f.input :title %>
   <div id="dropdowns">
   <%= f.select :location,
   City.all.map { |u| [u.name, u.name] },
                { include_blank: true },
-               { class: 'chosen-select' }
+               { class: 'chosen-select form-control' }
 %>
 </div>
 <%= f.input :expire %>
+<%= f.input :duration, hint: "In Months" %>
   <%= f.input :description %>
   <%= f.input :responsibilities %>
   <%= f.input :additional_info %>

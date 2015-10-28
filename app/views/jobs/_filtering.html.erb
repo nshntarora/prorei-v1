@@ -8,7 +8,7 @@
                { class: 'chosen-select' }
   %><br>
   <%= f.label :category_name_eq, "Category" %><br>
-  <%= f.collection_select(:category_name_eq, Category.all, :name, :name) %><br>
+  <%= f.collection_select(:category_name_eq, Category.all, :name, :name)%><br>
   <%= f.label :job_type_name_eq, "Job Type" %><br>
   <%= f.collection_select(:job_type_name_eq, JobType.all, :name, :name) %><br>
   <%= f.label :employer_id_eq, "Where at?" %><br>

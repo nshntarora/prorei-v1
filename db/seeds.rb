@@ -8,6 +8,10 @@
 
 city_list = [
     [
+ "Remote",
+ "Anywhere"
+    ],
+    [
  "Mumbai",
  "Maharashtra"
     ],
