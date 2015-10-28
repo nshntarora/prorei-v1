@@ -8,6 +8,11 @@
     <%= image_tag(current_employer.logo.url, class: "avatar", style: "margin-bottom: 25px;") %>
     <%= f.input :logo, required: true %>
     <%= f.input :name, required: true %>
+    <%= f.select :industry,
+  Industry.all.map { |u| [u.name, u.name] },
+               { include_blank: true },
+               { class: 'chosen-select form-control' }
+%>
     <%= f.input :description, required: true %>
     <%= f.input :link, required: true %>
     <%= f.input :email, required: true %>

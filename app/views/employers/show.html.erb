@@ -6,6 +6,7 @@
 <center><%= image_tag(@employer.logo.url, class: "company-logo") %>
 		<% end %>
     <div class="name"><b><%= @employer.name %></b></div>
+    <div class="name"><b><%= @employer.industry %></b></div>
 		<div class="description"><%= @employer.description %></div>
     <% if @employer.link.blank? %>
     <% else %>

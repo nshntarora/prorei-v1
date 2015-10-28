@@ -12,11 +12,12 @@ class JobsController < ApplicationController
 
 	def new
 		@job = current_employer.jobs.build
+		@job.industry = @job.employer.industry
 	end
 
 	def create
 		@job = current_employer.jobs.build(job_params)
-
+		@job.industry = @job.employer.industry
 		if @job.save
 			redirect_to @job
 		else
@@ -47,6 +48,6 @@ class JobsController < ApplicationController
 	end
 
 	def job_params
-		params.require(:job).permit(:title, :description, :responsibilities, :additional_info, :question, :category_id, :location, :job_type_id, :expire, :duration)
+		params.require(:job).permit(:title, :description, :responsibilities, :additional_info, :question, :category_id, :location, :job_type_id, :expire, :duration, :industry)
 	end
 end

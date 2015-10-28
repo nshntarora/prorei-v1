@@ -3,7 +3,7 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   cities = City.create([[ name: 'Chicago' ], [ name: 'Copenhagen']])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 city_list = [
@@ -4873,6 +4873,69 @@ city_list = [
     ]
 ]
 
+
+industry_list = [
+"Accounting",
+"Advertising",
+"Aerospace",
+"Agriculture",
+"Aircraft",
+"Airline",
+"Apparel and Accessories",
+"Automotive",
+"Banking",
+"Biotechnology",
+"Broadcasting",
+"Brokerage",
+"Call Centers",
+"Cargo Handling",
+"Chemical",
+"Consulting",
+"Consumer Products",
+"Cosmetics",
+"Defense",
+"Department Stores",
+"Education",
+"Electronics",
+"Energy",
+"Entertainment and Leisure",
+"Executive Search",
+"Exhibitions and Events",
+"Financial Services",
+"Food and Beverages",
+"Grocery",
+"Healthcare",
+"Internet Publishing",
+"Investment Banking",
+"Legal",
+"Manufacturing",
+"Motion Picture and Video",
+"Music",
+"Newspaper Publishers",
+"Online Auctions",
+"Other",
+"Pension Funds",
+"Pharamceuticals",
+"Private Equity",
+"Publishing",
+"Real Estate",
+"Retails and Wholedsale",
+"Securities and Commodity Exchange",
+"Services",
+"Software",
+"Sports",
+"Technology",
+"Telecommunications",
+"Television",
+"Transportation",
+"Trucking",
+"Venture Capital"
+]
+
 city_list.each do |name, state|
   City.create( name: name, state: state )
+end
+
+industry_list.each do |name|
+  Industry.create( name: name )
 end
